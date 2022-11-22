@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASKZZ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/x-icon" href="Screenshot 2022-11-20 174319.png" />
+</head>
+<body class="body" id="body">
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="Screenshot 2022-11-20 174319.png" alt="">
+                </span>
+
+                
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+               
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">HOME</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">GROUPS</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">SPACES</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-pie-chart-alt icon' ></i>
+                            <span class="text nav-text">PROFILE</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="subscribe.html">
+                            <i class='bx bx-heart icon' ></i>
+                            <span class="text nav-text">SUBSCRIBE</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="mainpage.html">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">LOGOUT</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+       
+    </section>
+
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script>
+
+    <div id="preloader"></div>
+    <script type="text/javascript" src="darkmode.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 0, 
+  delay: 0, 
+  duration: 1000, 
+  easing: 'ease', 
+  once: false,
+  anchorPlacement: 'top-bottom',
+      });
+    </script>
+    
+  
+  
+
+
+  
+    <div class="home">
+        <div class="container">
+            
+            <div class="home-weapper">
+    
+                <!-- home left start here -->
+                
+                   
+                <div class="home-left" data-aos="slide-right">
+    
+                    <div class="profile">
+                        <img src="images/user.png" alt="user">
+                        <h3>--user--</h3>
+                    </div>
+                   
+                    <div class="pages">
+                        <h4 class="mini-headign">Spaces</h4>
+                        <label>
+                            <img src="images/education.jpeg" alt="">
+                            <span>Educational</span>
+                        </label>
+                        <label>
+                            <img src="images/spiritual.jpeg" alt="">
+                            <span>Spirituality</span>
+                        </label>
+                        <button class="see-more-btn">See more <i class="fa-solid fa-angle-down"></i></button>
+                    </div>
+    
+                    <div class="group">
+                        <h4 class="mini-headign">Group</h4>
+                        <label>
+                            <img src="images/graphic.png" alt="group01">
+                            <span>Graphic design</span>
+                        </label>
+                        
+                        <label>
+                            <img src="images/web.jpeg" alt="group02">
+                            <span>website design</span>
+                        </label>
+    
+                        <label>
+                            <img src="images/ml.jpeg" alt="group03">
+                            <span>Machine Learning</span>
+                        </label>
+    
+                        <button class="see-more-btn">See more <i class="fa-solid fa-angle-down"></i></button>
+                        <div class="black" id="button">
+                           Dark Mode
+                        </div>
+                    </div>
+    
+                    
+                    
+                </div>
+                <div class="home-center" data-aos="slide-up">
+                      <header>
+       
+       
+        <div class="header-container" data-aos="slide-up">
+          
+               
+            <div class="header-wrapper">
+                
+                <div class="logoBox">
+                    <img src="Screenshot 2022-11-20 174319.png" alt="logo" >
+                </div>
+                <div class="searchBox">
+                    <input type="search" placeholder=" Search anything ">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="iconBox1">
+                    <i id="home" class="fa-solid fa-house"></i>
+                    <i id="group" class="fa-solid fa-user-group"></i>
+                    <i id="like" class="fa-solid fa-thumbs-up"></i>
+                    
+                </div>
+                
+                
+        </div>
+    </header>
+                    <div class="home-center-wrapper">
+                        
+    
+                        <div class="createPost">
+    
+                            <h3 class="mini-headign">Create Post</h3>
+                            <div class="post-text">
+                               
+                                <input type="text-area " placeholder="Create a post">
+                                
+                                  <i style="background: #416dff;" class="fa-sharp fa-solid fa-paper-plane-top"></i>
+                            </div>
+    
+                            <div class="post-icon">
+                                <a href="#" style="background: #ffebed;">
+                                <i style="background: #416dff;" class="fa-sharp fa-solid fa-paper-plane-top"></i>
+                               SUBMIT</a>
+    
+                              
+    
+    
+                            </div>
+    
+                        </div>
+    
+                       
+                        <div class="fb-post1">
+                            <div class="fb-post1-container">
+                                <div class="fb-post1-header">
+                                    <ul>
+                                        <li class="active"><a href="home.html">popular</a></li>
+                                        <li><a href="recent.html">recent</a></li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="fb-p1-main">
+                                    <div class="post-title">
+                                       
+                                        <ul>
+                                            <li><h3>User <span> . 2 hours ago</span></h3></li>
+                                            <li><span>02 march at 12:55 PM</span></li>
+                                        </ul>
+                                        
+                                    </div>
+    
+                                    <div class="like-comment">
+                                        <ul>
+                                            <li>
+                                                <i class="fa-solid fa-thumbs-up"></i>
+                                                
+                                                <span>22k</span>
+                                            </li>
+                                            <li><i class="fa-regular fa-comment-dots"></i> <span>555</span></li>
+                                            <li><i class="fa-solid fa-share-from-square"></i> <span>254</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div> <!-- home center wrapper end -->
+                </div>
+                
+                <div class="home-right" data-aos="slide-right">
+                    
+                    <div class="home-right-wrapper">
+                        
+    
+                <div class="create-page">
+                    
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <h4>Create Page & Groups</h4>
+                            
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                        <li>
+                            <img src="images/group.jpg" alt="groups">
+                        </li>
+                        <li>
+                            <b>Group name <span>200k Members</span></b>
+                            <button>Join Group</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Subscribe" >
+                       <a id="sub" href="subscribe.html"> subscribe </a>
+                </div>
+                
+                    </div>
+                    
+                </div>
+      <script>
+          var loader = document.getElementById("preloader");
+          window.addEventListener("load",function(){
+            loader.style.display = "none";
+            
+          })
+
+      </script>
+      
+      
+
+      
+            </body>
+</html>

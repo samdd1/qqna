@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>ASKZZ</title>
+      <link rel="stylesheet" href="mainpage.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <script src="https://kit.fontawesome.com/a92e035de8.js" crossorigin="anonymous"></script>
+      <link rel="icon" type="image/x-icon" href="Screenshot 2022-11-20 174319.png" />
+   </head>
+   <body>
+     
+  <script>
+    AOS.init({
+      offset: 0, 
+  delay: 0, 
+  duration: 1000,
+  easing: 'ease',
+  once: false, 
+  mirror: false, 
+  anchorPlacement: 'top-bottom',
+    });
+  </script>
+      <nav>
+         <div class="menu-icon">
+            <span class="fas fa-bars"></span>
+         </div>
+         <div class="logo">
+            ASKZZ
+         </div>
+         <div class="nav-items">
+            <li><a href="logo">Home</a></li>
+            <li><a href="signup.html">SignUp</a></li>
+            <li><a href="signup.html">Login</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        
+            
+         </div>
+         <div class="search-icon">
+            <span class="fas fa-search"></span>
+         </div>
+         <div class="cancel-icon">
+            <span class="fas fa-times"></span>
+         </div>
+        
+      </nav>
+      
+      <div class="content">
+      
+         <div data-aos="slide-right"> 
+         <header class="transform">   Questions??<br> Search it</header>
+      </div>
+        
+      </div>
+      <div data-aos="bottom-top">
+      <div class="searchh-bar">
+        <form action="#">
+            
+          <input type="text" placeholder="  Search anything" class="txt">
+          <button type="submit">Search</button>
+          
+        </form>
+      </div>
+      </div>
+       
+      <script>
+         const menuBtn = document.querySelector(".menu-icon span");
+         const searchBtn = document.querySelector(".search-icon");
+         const cancelBtn = document.querySelector(".cancel-icon");
+         const items = document.querySelector(".nav-items");
+         const form = document.querySelector("form");
+         menuBtn.onclick = ()=>{
+           items.classList.add("active");
+           menuBtn.classList.add("hide");
+           searchBtn.classList.add("hide");
+           cancelBtn.classList.add("show");
+         }
+         cancelBtn.onclick = ()=>{
+           items.classList.remove("active");
+           menuBtn.classList.remove("hide");
+           searchBtn.classList.remove("hide");
+           cancelBtn.classList.remove("show");
+           form.classList.remove("active");
+           cancelBtn.style.color = "#ff3d00";
+         }
+         searchBtn.onclick = ()=>{
+           form.classList.add("active");
+           searchBtn.classList.add("hide");
+           cancelBtn.classList.add("show");
+         }
+      </script>
+   </body>
+</html>
